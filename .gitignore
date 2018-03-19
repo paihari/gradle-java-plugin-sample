@@ -2,3 +2,4 @@
 build
 gradle-java-plugin/build
 plugin-sample/build
+.idea
