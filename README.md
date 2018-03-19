@@ -2,7 +2,7 @@
 
 Step by step guide to create a Custom Gradle Plugin in Java and sample project for usagae
 
-#Structure
+##Structure
 
 This project has three sections
  * gradle-java-plugin : Simple gradle java plugin projcet
