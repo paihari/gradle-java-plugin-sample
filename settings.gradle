@@ -1,0 +1,6 @@
+rootProject.name = 'gradle.java.plugin.sample'
+include 'gradle-java-plugin'
+findProject(':gradle-java-plugin')?.name = 'gradle.java.plugin'
+include 'plugin-sample'
+findProject(':plugin-sample')?.name = 'plugin.sample'
+

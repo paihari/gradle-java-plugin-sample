@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        maven {
+            // In this example Local project maven repository populated by maven uplaodArchive task in gradle-java-plugin project
+            // Any maven repo where the plugin resides
+
+            url uri('./../repo')
+
+        }
+    }
+    dependencies {
+        classpath group: 'com.gundi', name: 'gradle.java.plugin.sample', version: '1.0'
+    }
+
+}
+
+
+// Plugin name is deduced from the file name where the plugin implementation class is specified
+// Example %baseproject%/gradle-java-plugin-sample/gradle-java-plugin/src/main/resources/META-INF/gradle-plugins/com.gundi.gradle.java.plugin.properties
+apply plugin: 'com.gundi.gradle.java.plugin'
+
+
+
+
+customGradleJavaPluginName {
+
+    sourceDir = file('./build')
+    headingMessage = 'Olalala'
+}
+
+group 'com.gundi'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
