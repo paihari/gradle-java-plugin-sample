@@ -1,3 +1,5 @@
+![Gundi](https://paihari.github.io/repo/gundi-logo.png)
+
 # Gradle Java Plugin Sample
 
 Step by step guide to create a Custom Gradle Plugin in Java and sample project for usagae
